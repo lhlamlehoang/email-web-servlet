@@ -25,10 +25,10 @@ jobs:
         run: mvn clean install
 
       - name: Upload artifact for deployment job
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: java-app
-          path: '.idea/artifacts/WebEmailServlet_war.xml'
+          path: '$PROJECT_DIR$/out/artifacts/WebEmailServlet_war'
 
   deploy:
     runs-on: windows-latest
