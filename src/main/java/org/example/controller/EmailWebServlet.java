@@ -18,6 +18,7 @@ public class EmailWebServlet extends HttpServlet {
             url = "/index.jsp";
         } else if (action.equals("add")) {
             //get parameters
+            url = "/thanks.jsp";
             String email = req.getParameter("email");
             String firstname = req.getParameter("firstname");
             String lastname = req.getParameter("lastname");
@@ -28,7 +29,6 @@ public class EmailWebServlet extends HttpServlet {
             db.insert(user);
 
             req.setAttribute("user", user);
-            url = "/thanks.jsp";
         }
         getServletContext()
                 .getRequestDispatcher(url)
