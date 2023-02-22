@@ -32,7 +32,6 @@ jobs:
 
   deploy:
     runs-on: windows-latest
-    needs: build
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
@@ -49,5 +48,5 @@ jobs:
         with:
           app-name: 'email-servlet'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1041A7258663488FB39EB5189010AC37 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1C784A0A8B264D139E5B1F0D9BF72A90 }}
           package: '*.war'
