@@ -50,3 +50,6 @@ jobs:
           slot-name: 'Production'
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1041A7258663488FB39EB5189010AC37 }}
           package: '*.war'
+      - name: Azure Login
+        uses: Azure/login@v1
+
