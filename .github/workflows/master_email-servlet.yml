@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: java-app
-          path: 'D:\HK2-S3\Web Programming\Week 2\WebEmailServlet\out\artifacts\WebEmailServlet_war\WebEmailServlet_war.war'
+          path: java-app
 
   deploy:
     runs-on: windows-latest
