@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="WebEmailServlet:war">
+    <output-path>$PROJECT_DIR$/out/artifacts/WebEmailServlet_war</output-path>
+    <root id="archive" name="WebEmailServlet_war.war">
+      <element id="artifact" artifact-name="WebEmailServlet:war exploded" />
+    </root>
+  </artifact>
+</component>

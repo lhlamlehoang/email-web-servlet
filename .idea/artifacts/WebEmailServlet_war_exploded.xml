@@ -2,12 +2,13 @@
   <artifact type="exploded-war" name="WebEmailServlet:war exploded">
     <output-path>$PROJECT_DIR$/out/artifacts/WebEmailServlet_war_exploded</output-path>
     <root id="root">
-      <element id="javaee-facet-resources" facet="WebEmailServlet/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="WebEmailServlet" />
         </element>
       </element>
+      <element id="archive" name="archive.jar" />
+      <element id="javaee-facet-resources" facet="WebEmailServlet/web/Web" />
     </root>
   </artifact>
 </component>
